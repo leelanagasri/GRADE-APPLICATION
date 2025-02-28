@@ -166,10 +166,9 @@ public class Main implements ActionListener{
 				c = Double.parseDouble(tf5.getText());
 				
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				String url = "jdbc:mysql://127.0.0.1:3306/db";
-                String user = "root";
-                String password = "Leela@123";
-                
+				String url = "your-mysql-url";
+                String user = "your-root-name";
+                String password = "Your-pwd";
                 
                 Connection con = DriverManager.getConnection(url, user, password);
                 
@@ -216,9 +215,9 @@ public class Main implements ActionListener{
 				c = Double.parseDouble(tf5.getText());
 				
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				String url = "jdbc:mysql://127.0.0.1:3306/db";
-                String user = "root";
-                String password = "Leela@123";
+				String url = "your-mysql-url";
+                String user = "your-root-name";
+                String password = "Your-pwd";
                 
                 
                 Connection con = DriverManager.getConnection(url, user, password);
@@ -266,9 +265,9 @@ public class Main implements ActionListener{
 				id = Integer.parseInt(tf2.getText());
 				
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				String url = "jdbc:mysql://127.0.0.1:3306/db";
-                String user = "root";
-                String password = "Leela@123";
+				String url = "your-mysql-url";
+                String user = "your-root-name";
+                String password = "Your-pwd";
                 
                 
                 Connection con = DriverManager.getConnection(url, user, password);
