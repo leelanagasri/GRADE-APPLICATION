@@ -6,11 +6,11 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.sql.*;
 
-public class sixth{
+public class Main2{
 	JFrame frame;
-    JTable bookingTable;
+    	JTable bookingTable;
 
-    public sixth() {
+    public Main2() {
     	frame = new JFrame("View Student Records");
     	frame.setSize(600, 400);
     	frame.setLocationRelativeTo(null);
@@ -28,9 +28,9 @@ public class sixth{
 
         try {
         	Class.forName("com.mysql.cj.jdbc.Driver");
-			String url = "jdbc:mysql://127.0.0.1:3306/db";
-            String user = "root";
-            String password = "Leela@123";
+			String url = "your-mysql-url";
+            String user = "your-root-name";
+            String password = "Your-pwd";
             
             
             Connection con = DriverManager.getConnection(url, user, password);
@@ -61,7 +61,7 @@ public class sixth{
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new sixth());
+        SwingUtilities.invokeLater(() -> new Main2());
     }
 
 }
