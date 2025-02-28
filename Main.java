@@ -9,7 +9,7 @@ import java.awt.event.*;
 
 import java.sql.*;
 
-public class fifth implements ActionListener{
+public class Main implements ActionListener{
 	JFrame frame;
 	JFrame frame2;
 	JLabel l;
@@ -30,7 +30,7 @@ public class fifth implements ActionListener{
 	JLabel lb;
 	JTable table;
 	
-	public fifth(){
+	public Main(){
 		frame = new JFrame("Grading application");
 		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		frame.setLayout(null);
@@ -305,12 +305,12 @@ public class fifth implements ActionListener{
         }
 		if(op.equals("VIEW GRADES")) {
 			frame.dispose();
-			new sixth();
+			new Main2();
         }
 		
 	}
 	
 	public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new fifth());
+        SwingUtilities.invokeLater(() -> new Main());
     }
 }
